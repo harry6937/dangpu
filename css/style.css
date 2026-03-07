@@ -1,0 +1,16 @@
+
+body{margin:0;font-family:Arial;background:#f4f6f8;padding-bottom:70px}
+header{background:#c62828;color:#fff;text-align:center;padding:14px}
+.page{display:none;padding:15px}
+.page.active{display:block}
+.card{background:#fff;border-radius:10px;padding:12px;margin-bottom:12px}
+input{padding:10px;width:100%;margin-top:6px}
+button{padding:10px;border:none;border-radius:6px;background:#c62828;color:#fff;margin:4px}
+table{width:100%;border-collapse:collapse}
+th,td{border-bottom:1px solid #ddd;padding:8px;text-align:center}
+
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;height:60px;background:#fff;display:flex;border-top:1px solid #ddd}
+.bottom-nav button{flex:1;background:white;color:#333;border:none}
+
+.popup{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.4);display:none;align-items:center;justify-content:center}
+.popup div{background:#fff;padding:20px;border-radius:10px}

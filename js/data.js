@@ -1,0 +1,1 @@
+let pawnRecords=[];let coupleRecords=[];let loanRecords=[];
