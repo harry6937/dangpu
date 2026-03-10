@@ -3,7 +3,8 @@ function initLoan(){
 document.getElementById("tab3").innerHTML=`
 <div class="card">
 总放贷本金：<span id="principal"></span><br>
-月利息收入：<span id="interest"></span>
+月利息收入：<span id="interest"></span><br>
+总利息收入：<span id="totalInterest"></span>
 </div>
 
 <div class="card">
@@ -65,6 +66,7 @@ document.getElementById("principal").innerText=formatMoney(s.principal)
 document.getElementById("interest").innerText=formatMoney(s.interest)
 
 let html=""
+let allInterest = 0
 
 loanRecords.forEach((l,i)=>{
 
@@ -78,6 +80,8 @@ if(months<0) months=0
 
 let totalInterest=monthly*months
 
+allInterest += totalInterest
+
 html+=`<tr>
 <td>${start.toLocaleDateString()}</td>
 <td>${l.name}</td>
@@ -89,6 +93,8 @@ html+=`<tr>
 })
 
 document.getElementById("loanTable").innerHTML=html
+document.getElementById("totalInterest").innerText=formatMoney(allInterest)
+
 }
 
 function deleteLoan(i){
